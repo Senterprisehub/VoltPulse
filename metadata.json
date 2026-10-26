@@ -1,0 +1,6 @@
+{
+  "name": "VoltPulse",
+  "description": "Real-time battery telemetry, health tracking, cable diagnostics, and lock-screen charging monitor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
