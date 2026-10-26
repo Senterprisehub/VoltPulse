@@ -1,22 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/39ab6e9a-a0de-48f8-9b71-bd75cd397d6c
-
-## Run Locally
-
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
-
-
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+Stop guessing how fast your phone is charging — see the real numbers in real time.
+VoltPulse is a precision battery health, charging wattage, and power protection utility designed for modern Android devices. Whether you want to verify if your charger is delivering true Super Fast Charging, protect your battery's long-term lifespan with an 80% health alarm, or get hands-free voice alerts when charging is complete, VoltPulse puts complete hardware telemetry right on your screen.
+⚡ Real-Time Charging Wattage & Speed Detection
+Know immediately if a faulty cable or weak adapter is slowing you down.
+Live Hardware Telemetry: Track real-time power in Watts (W), electrical current (mA), voltage (mV), and battery temperature (°C).
+4-Tier Speed Classification: Automatically detects and labels Slow Charging, Standard Charging, Fast Charging, and Super Fast Charging (including dual-cell FlashCharge / SuperVOOC / HyperCharge calibration).
+Exact System Charge Time Sync: Directly aligns with your device’s hardware battery controller to show accurate time remaining to 80% and 100% Full Charge.
+🔊 Customizable Smart Voice Alerts
+Never leave your phone cooking on the charger again. VoltPulse speaks clear, hands-free voice notifications with individual on/off switches for every milestone:
+100% Full Charge Voice Alert: Announces "Device fully charged, remove the cable" the moment charging completes.
+80% Battery Health Protector: Alerts you at the optimal 80% mark to reduce high-voltage cell stress and extend battery cycle life.
+Smart Low-Battery Milestones: Speaks only at critical 20%, 10%, and 5% milestones—giving you timely reminders without annoying alerts on every single percentage drop.
+Independent Controls: Toggle voice announcements, sound, and vibration independently for each alert type.
+🛡️ Overcharge Guard & Smart Plug Automation
+Protect your battery while charging overnight or at your desk:
+Full-Screen Overcharge Guard: Optional high-visibility wake screen when your device hits 100% so you can unplug right away.
+Smart Plug Webhook Integration: Automatically trigger your smart home plug (Home Assistant, IFTTT, Tasmota, or custom HTTP webhook) to cut power when your battery reaches full charge.
+Hardware Cut-Off Support: Supports kernel-level charging control on rooted devices.
+🔌 Charger & Cable Benchmark Tester
+Not all USB-C cables are created equal. Run a dedicated Cable & Charger Benchmark to measure peak wattage, average current, voltage stability, and thermal rise—and save the results to compare your chargers side by side.
+📊 Session History & Lock Screen Live Monitor
+Live Notification Bar: View charging wattage, battery temperature, and time-to-full right from your lock screen or notification shade.
+Historical Session Logs: Review past charging and discharging sessions to spot thermal spikes or battery drain patterns.
+100% Private & Offline-First: All battery diagnostics, benchmarks, and settings are stored locally on your device.
+Download VoltPulse today to test your chargers, guard against overcharging, and extend your battery's lifespan!
