@@ -308,7 +308,7 @@
       }
 
       .download-panel {
-        margin: 2.5rem 0 4rem;
+        margin: 2.5rem 0 2rem;
         padding: 1.6rem;
         border-radius: 24px;
         border: 1px solid rgba(52, 211, 153, 0.28);
@@ -331,6 +331,12 @@
 
       .release-sub {
         color: rgba(229, 238, 251, 0.8);
+      }
+
+      .install-note {
+        margin: 1rem 0 0;
+        color: rgba(229, 238, 251, 0.82);
+        font-size: 0.95rem;
       }
 
       footer {
@@ -382,8 +388,9 @@
             <a
               class="btn primary"
               href="https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk"
-              target="_blank"
-              rel="noreferrer"
+              download="VoltPulse-v1.0.apk"
+              target="_self"
+              rel="noopener noreferrer"
             >
               Download Latest Release
             </a>
@@ -458,12 +465,14 @@
           <a
             class="btn primary"
             href="https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk"
-            target="_blank"
-            rel="noreferrer"
+            download="VoltPulse-v1.0.apk"
+            target="_self"
+            rel="noopener noreferrer"
           >
             Download APK
           </a>
         </div>
+        <p class="install-note">Android may prompt you to allow installation from this browser. If you see a block, enable “Install unknown apps” for your browser, then tap the downloaded APK to install it.</p>
       </section>
     </main>
 
