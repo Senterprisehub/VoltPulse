@@ -388,8 +388,10 @@
             <a
               class="btn primary"
               href="https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk"
-              download="VoltPulse-v1.0.apk"
-              target="_self"
+              data-download-link="true"
+              data-download-url="https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk"
+              data-download-name="VoltPulse-v1.0.apk"
+              target="_blank"
               rel="noopener noreferrer"
             >
               Download Latest Release
@@ -465,19 +467,50 @@
           <a
             class="btn primary"
             href="https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk"
-            download="VoltPulse-v1.0.apk"
-            target="_self"
+            data-download-link="true"
+            data-download-url="https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk"
+            data-download-name="VoltPulse-v1.0.apk"
+            target="_blank"
             rel="noopener noreferrer"
           >
             Download APK
           </a>
         </div>
-        <p class="install-note">Android may prompt you to allow installation from this browser. If you see a block, enable “Install unknown apps” for your browser, then tap the downloaded APK to install it.</p>
+        <p class="install-note">
+          On Android, the file opens in your browser so your device can use its native download prompt and browser settings.
+          If you are using an in-app browser, the system may ask you to choose a browser before the APK starts downloading.
+        </p>
       </section>
     </main>
 
     <footer class="container">
       <div>VoltPulse • Real-time battery telemetry, health tracking, cable diagnostics, and power protection.</div>
     </footer>
+
+    <script>
+      const APK_DOWNLOAD_URL = "https://github.com/Senterprisehub/VoltPulse/releases/download/OpenSorce/VoltPulse.-.v1.0.apk";
+
+      function openExternalDownload(event) {
+        event.preventDefault();
+
+        const targetUrl = event.currentTarget.dataset.downloadUrl || APK_DOWNLOAD_URL;
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+        if (isMobile) {
+          const popup = window.open("", "_blank", "noopener,noreferrer");
+          if (popup) {
+            popup.opener = null;
+            popup.location.href = targetUrl;
+            return;
+          }
+        }
+
+        window.open(targetUrl, "_blank", "noopener,noreferrer");
+      }
+
+      document.querySelectorAll("[data-download-link]").forEach((button) => {
+        button.addEventListener("click", openExternalDownload);
+      });
+    </script>
   </body>
 </html>
